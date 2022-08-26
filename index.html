@@ -21,17 +21,22 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Source+Sans+3:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
 	<style>
 		body {
+			font-family: 'Oswald', sans-serif;
 			margin: 0 auto;
 			max-width: 850px;
+			padding-bottom: 40px;
 		}
 
-		h1, h2, h3 {
+		h1, h2 {
 			color: #1A5C71;
-			font-family: 'Oswald', sans-serif;
+		}
+
+		h3, h4 {
+			color: #367DA2;
 		}
 
 		h1 {
@@ -49,6 +54,30 @@
 			text-transform: uppercase;
 		}
 
+		h3, h4 {
+			font-size: 14px;
+			font-weight: 600;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+
+		p, em {
+			font-family: 'Source Sans 3', sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+
+		em {
+			display: inline-block;
+			margin-top: 15px;
+		}
+
+		strong {
+			display: block;
+		}
+
 		hr {
 			background-color: #1A5C71;
 			border-bottom: 1px solid #1A5C71;
@@ -58,10 +87,72 @@
 			height: 5px;
 		}
 
+		aside {
+			display: inline-block;
+			max-width: 25%;
+			padding-top: 10px;
+			vertical-align: top;
+		}
+
+		aside a {
+			color: #606060;
+			font-family: 'Source Sans 3', sans-serif;
+			font-size: 12px;
+			font-weight: 400;
+		}
+
+		aside svg {
+			height: auto;
+			margin-right: 5px;
+			max-width: 15px;
+			fill: #606060;
+		}
+
+		aside .contact-method {
+			display: flex;
+			margin-bottom: 5px;
+		}
+
+		main {
+			display: inline-block;
+			max-width: 75%;
+			padding-top: 10px;
+			padding-left: 20px;
+		}
+
+		main h3:first-child {
+			margin-top: 0;
+		}
+
+		main a {
+			color: black;
+			font-family: 'Source Sans 3', sans-serif;
+			font-weight: 300;
+		}
+
+		main strong {
+			font-size: 14px;
+		}
+
+		p.blue {
+			color: #367DA2;
+			font-family: 'Oswald';
+			font-weight: 600;
+		}
+
 		@media screen and (max-width: 768px) {
 			body {
 				padding-left: 20px;
 				padding-right: 20px;
+			}
+
+			aside {
+				max-width: 100%;
+			}
+
+			main {
+				max-width: 100%;
+				padding-left: 0;
 			}
 		}
 	</style>
@@ -72,5 +163,107 @@
 	<h2>Experienced Technical engineer successfully modernizing legacy code</h2>
 
 	<hr>
+
+	<aside>
+		<div class="contact-method">
+			<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg>
+			<a href="mailto:k.koppenhaver@gmail.com">k.koppenhaver@gmail.com</a>
+		</div>
+		<div class="contact-method">
+			<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M949 893q0 26-16.5 45t-41.5 19q-26 0-45-16.5t-19-41.5q0-26 17-45t42-19 44 16.5 19 41.5zm15 58l350-581q-9 8-67.5 62.5t-125.5 116.5-136.5 127-117 110.5-50.5 51.5l-349 580q7-7 67-62t126-116.5 136-127 117-111 50-50.5zm647-55q0 201-104 371-3-2-17-11t-26.5-16.5-16.5-7.5q-13 0-13 13 0 10 59 44-74 112-184.5 190.5t-241.5 110.5l-16-67q-1-10-15-10-5 0-8 5.5t-2 9.5l16 68q-72 15-146 15-199 0-372-105 1-2 13-20.5t21.5-33.5 9.5-19q0-13-13-13-6 0-17 14.5t-22.5 34.5-13.5 23q-113-75-192-187.5t-110-244.5l69-15q10-3 10-15 0-5-5.5-8t-10.5-2l-68 15q-14-72-14-139 0-206 109-379 2 1 18.5 12t30 19 17.5 8q13 0 13-12 0-6-12.5-15.5t-32.5-21.5l-20-12q77-112 189-189t244-107l15 67q2 10 15 10 5 0 8-5.5t2-10.5l-15-66q71-13 134-13 204 0 379 109-39 56-39 65 0 13 12 13 11 0 48-64 111 75 187.5 186t107.5 241l-56 12q-10 2-10 16 0 5 5.5 8t9.5 2l57-13q14 72 14 140zm85 0q0-163-63.5-311t-170.5-255-255-170.5-311-63.5-311 63.5-255 170.5-170.5 255-63.5 311 63.5 311 170.5 255 255 170.5 311 63.5 311-63.5 255-170.5 170.5-255 63.5-311zm96 0q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z"/></svg>
+			<a href="https://keanan.dev">https://keanan.dev</a>
+		</div>
+		<div class="contact-method">
+			<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg>
+			<a href="https://twitter.com/kkoppenhaver">@kkoppenhaver</a>
+		</div>
+		<div class="contact-method">
+			<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"/></svg>
+			<a href="https://github.com/kkoppenhaver">kkoppenhaver</a>
+		</div>
+	</aside>
+	<main>
+		<h3>Profile</h3>
+
+		<p>A tech lead and generalist with over 8 years of experience turning business ideas into products, continuously bridging the gaps between the technical side and other teams involved in each project. I pride myself on my ability to both lead dev teams and mentor junior developers, and have a great interest in growing diverse, efficient teams. I’m seeking a role where I am able to support other developers as they clear the bar of their current capabilities, and together, deliver on projects that create a positive impact on its end users.</p>
+
+		<h3>Experience</h3>
+
+		<div class="job">
+			<h4>Writer, Draft.dev; Remote — 2020 - Present</h4>
+
+			<p>- Completed over fifty 1500-word technical written pieces for clients across a variety of topics such as engineering management, DevOps and specific technical implementations.</p>
+			<p>- Asynchronously worked with editors to capture the voice of the client and emphasize key points prior to publishing</p>
+
+			<em>Writing Samples:</em>
+
+			<p>- <a href="https://www.rookout.com/blog/why-python-2-will-never-die/">Why Python 2 Will Never Die</a></p>
+			<p>- <a href="https://cerbos.dev/blog/the-case-for-granular-permissions">The Case for Granular Permissions</a></p>
+			<p>- <a href="https://earthly.dev/blog/docker-vs-chef/">Chef vs. Docker for Builds and Deployments</a></p>
+			<p>- <a href="https://lightstep.com/blog/incident-management-best-practices">Incident Management Best Practices</a></p>
+			<p>- <a href="https://www.tiny.cloud/blog/select-and-highlight-text/">How to select and highlight text in rich text editors</a></p>
+		</div>
+
+		<div class="job">
+			<h4>Co-Founder and CTO, Alpha Particle; Chicago, IL — 2017 - Present</h4>
+
+			<p>- Expanded the business from its inception to nearly $250k in yearly revenue</p>
+			<p>- Managed, mentored, and continuously grew a dev team comprised of both full time hires and contractors to deliver client work</p>
+			<p>- Directed and completed projects for a diverse stable of clients, from large publishing clients such as <a href="https://rollingstone.com">RollingStone.com</a> and <a href="https://variety.com">Variety.com</a> to a horse veterinarian in New Mexico looking to revitalize his <a href="https://horsesidevetguide.com">online business</a></p>
+		</div>
+
+		<div class="job">
+			<h4>Lead Developer, How-To Geek; Remote — 2017 - 2018</h4>
+
+			<p>- Modernized development processes by introducing a QA environment, pull request-based workflow, and standardized infrastructure with Ansible</p>
+			<p>- Refactored technical debt to achieve sub-second page loads across the site on 20-30 million page views per month</p>
+			<p>- Built an entirely new WordPress theme from the ground up and led development for new brand <a href="https://reviewgeek.com">reviewgeek.com</a></p>
+			<p>- Facilitated all the necessary background work to lay a proper foundation for the migration of the entire infrastructure to AWS, as well as initiating its transfer</p>
+		</div>
+
+		<div class="job">
+			<h4>Technical Architect, doejo; Chicago, IL — 2016 – 2017</h4>
+
+			<p>- Advised development teams on multiple projects across the entire agency on technical strategy and execution based on individual clients' needs</p>
+			<p>- Worked directly with the sales team to align sales goals, targets, and language with realistic capabilities of the agency’s technical team</p>
+			<p>- Frequently attended industry conferences to form agency-level partnerships and present our work more broadly</p>
+			<p>- Mentored junior developers and upskilled dev teams</p>
+		</div>
+
+		<div class="job">
+			<h4>Developer, doejo; Chicago, IL — 2013 - 2016</h4>
+
+			<strong>Specific projects include:</strong>
+
+			<em>Investors.com</em>
+
+			<p>- Migrated ~100k pieces of content from a legacy .NET CMS onto WordPress</p>
+			<p>- Oversaw a launch that resulted in 25% faster site response, 15% increase in traffic and DevOps improvements that facilitated smoother deploys</p>
+			<p>- Managed a mix of local and remote developers across DevOps, front end, and backend teams</p>
+
+			<em>ScreenerTV.com</em>
+
+			<p>- Led the development team that upgraded the branding and relaunched Tribune Media’s TV news site</p>
+			<p>- Worked with the WordPress.com VIP and Tribune Media teams to scale the new site to nearly 100k daily page views</p>
+		</div>
+
+		<h3>Other Experience</h3>
+
+		<h4>Business acquisitions — 2021 - Present</h4>
+
+		<em>Kanban for WordPress:</em>
+		<p>- Led the acquisition process for our team of three business partners, including myself. Handled negotiations, diligence and all other relevant aspects of the deal.</p>
+		<p>- Detailed deal breakdown: <a href="https://emails.microsaasmonthly.com/issues/msm-1-from-0-to-buying-a-company-586537">https://emails.microsaasmonthly.com/issues/msm-1-from-0-to-buying-a-company-586537</a></p>
+
+		<em>WP Pusher and Branch CI:</em>
+		<p>- Being an independent acquisition, I handled all aspects from sourcing to raising capital ($150k+) to corporate structure and due diligence</p>
+		<p>- Detailed deal breakdown: <a href="https://emails.microsaasmonthly.com/issues/msm-8-deal-breakdown-wp-pusher-and-branch-797853">https://emails.microsaasmonthly.com/issues/msm-8-deal-breakdown-wp-pusher-and-branch-797853</a></p>
+
+		<h3>Education</h3>
+		<p class="blue">Illinois Wesleyan University, Bloomington, IL — Economics Major, Computer Science Minor, 2014</p>
+
+		<h3>Skills</h3>
+		<p>HTML/CSS/JS, WordPress, PHP, Public Speaking, Project Management, Technical Sales, Technical Writing</p>
+	</main>
 </body>
 </html>
